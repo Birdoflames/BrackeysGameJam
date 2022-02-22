@@ -11,13 +11,19 @@ config_version=4
 [application]
 
 config/name="Trading Simulator"
-run/main_scene="res://Scenes/Start_Scene.tscn"
+run/main_scene="res://Start_Scene.tscn"
 config/icon="res://icon.png"
 
 [display]
 
+window/size/test_width=1024
+window/size/test_height=600
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
+
+[global]
+
+window=false
 
 [physics]
 
