@@ -7,13 +7,10 @@ var items = ["ancient sword", "ancient bow", "Genie's lamp"]
 var recent_item = items[-1]
 
 
-
-
 func coords_gen():
 	var count = 0
 	
 	for i in invCoords:
 		if i == false:
-			recent_item.Vector2 = currentcoords[count]
-			print(recent_item.Vector2)
+			recent_item.set_position(currentcoords[count])
 		count += 1
