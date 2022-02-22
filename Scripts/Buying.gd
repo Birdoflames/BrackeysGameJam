@@ -11,7 +11,7 @@ func DontBuy():
 
 
 func Buy():
-	get_parent().get_node("Inventory")
+	get_parent().get_script()
 	
 	
 func _on_DontBuy_pressed():
