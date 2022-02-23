@@ -34,13 +34,13 @@ __meta__ = {
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 261, 213 )
 
-[node name="Label" type="Label" parent="."]
+[node name="name label" type="Label" parent="."]
 anchor_top = 0.098
 anchor_bottom = 0.225
-margin_left = 424.0
-margin_top = 193.2
-margin_right = 553.0
-margin_bottom = 160.0
+margin_left = 210.0
+margin_top = 39.2
+margin_right = 339.0
+margin_bottom = 6.0
 text = "hello"
 script = ExtResource( 1 )
 __meta__ = {
@@ -76,5 +76,15 @@ visible = false
 position = Vector2( 267, 213 )
 texture = ExtResource( 5 )
 script = ExtResource( 6 )
+
+[node name="item story" type="Label" parent="."]
+margin_left = 217.0
+margin_top = 177.0
+margin_right = 540.0
+margin_bottom = 271.0
+text = "this is the item story"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="Buy" to="GUI" method="_on_Buy_pressed"]

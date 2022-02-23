@@ -6,7 +6,8 @@ func story():
 	
 	var dictionary_story = "they died " + years_ago + "years_ago"
 	
-	get_parent().get_node("GUI/Artifacts_book/TextureRect/ancient bow label").set_text(dictionary_story)
+	get_parent().get_node("GUI/Artifacts_book/item labels/ancient bow Label").text = dictionary_story
+	
 	return story
 
 func _ready():

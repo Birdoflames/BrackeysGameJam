@@ -9,11 +9,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Bow Label" type="Label" parent="item labels"]
+[node name="ancient bow Label" type="Label" parent="item labels"]
 margin_left = 1.0
-margin_top = 8.0
+margin_top = 6.0
 margin_right = 389.0
-margin_bottom = 156.0
+margin_bottom = 154.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

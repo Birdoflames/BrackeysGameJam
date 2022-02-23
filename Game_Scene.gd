@@ -12,7 +12,8 @@ func story_decider():
 	rnd.randomize()
 	var chosen_one = sprites[rnd.randi_range(0, 12)]
 
-	var get_story = load("res://"+"Bow"+".gd").story()
+	var get_story = get_node("Bow").story()
+	print(get_node("Bow").story())
 
 	get_node("Bow").show()
 
@@ -23,7 +24,7 @@ func story_decider():
 		item_story = get_story
 	else:
 		item_story = load("res://"+"Bow"+".gd").story()
-		get_tree().get_node("res://name Label.gd").set_name_text(item_story)
+		get_node("item story").text = item_story
 
 
 func _ready():
