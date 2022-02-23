@@ -14,10 +14,6 @@ config/name="Trading Simulator"
 run/main_scene="res://Scenes/Start_Scene.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-Game="*res://Scripts/Game_Scene.gd"
-
 [display]
 
 window/stretch/mode="viewport"

@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/Game_Scene.gd" type="Script" id=1]
-[ext_resource path="res://Scripts/Buying.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/Inventory.gd" type="Script" id=3]
 
 [node name="Game_Scene" type="Node"]
@@ -40,7 +39,6 @@ margin_left = 412.0
 margin_top = 397.5
 margin_right = 612.0
 margin_bottom = 467.5
-script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -50,15 +48,19 @@ margin_right = 200.0
 margin_bottom = 32.0
 
 [node name="Story" type="Label" parent="GUI/Buying/Text"]
-margin_right = 200.0
+margin_left = 46.0
+margin_right = 154.0
 margin_bottom = 14.0
-text = "its me"
+size_flags_horizontal = 4
+text = "Story of the Item"
 
 [node name="Prize" type="Label" parent="GUI/Buying/Text"]
+margin_left = 46.0
 margin_top = 18.0
-margin_right = 200.0
+margin_right = 154.0
 margin_bottom = 32.0
-text = "helo"
+size_flags_horizontal = 4
+text = "Prize of the Item"
 
 [node name="Buttons" type="HBoxContainer" parent="GUI/Buying"]
 margin_top = 36.0
@@ -88,5 +90,9 @@ text = "Don't Buy"
 
 [node name="Background" type="Sprite" parent="."]
 
-[connection signal="pressed" from="GUI/Buying/Buttons/Buy" to="GUI/Buying/Buttons" method="_on_Buy_pressed"]
-[connection signal="pressed" from="GUI/Buying/Buttons/DontBuy" to="GUI/Buying/Buttons" method="_on_DontBuy_pressed"]
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="pressed" from="GUI/Buying/Buttons/Buy" to="." method="_on_Buy_pressed"]
+[connection signal="pressed" from="GUI/Buying/Buttons/DontBuy" to="." method="_on_DontBuy_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

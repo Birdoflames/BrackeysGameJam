@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Item_Scripts/Test_Item.gd" type="Script" id=1]
+[ext_resource path="res://Items/Item.gd" type="Script" id=1]
 
-[node name="Test_Item" type="Control"]
+[node name="Item" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )

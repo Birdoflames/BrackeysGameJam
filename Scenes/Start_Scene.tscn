@@ -39,3 +39,6 @@ margin_bottom = 100.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Credits"
+
+[connection signal="pressed" from="Buttons/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Buttons/Credits" to="." method="_on_Credits_pressed"]
