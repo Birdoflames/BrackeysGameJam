@@ -3,53 +3,18 @@
 [ext_resource path="res://name Label.gd" type="Script" id=1]
 [ext_resource path="res://Dictonary.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Inventory.gd" type="Script" id=3]
-[ext_resource path="res://Game_Scene.gd" type="Script" id=4]
+[ext_resource path="res://buying.gd" type="Script" id=4]
 [ext_resource path="res://Bow.png" type="Texture" id=5]
 [ext_resource path="res://Bow.gd" type="Script" id=6]
-
-[sub_resource type="GDScript" id=1]
-script/source = "extends HBoxContainer
-
-onready var buy_button = $Buy
-onready var dont_buy_button = $DontBuy
-
-func _ready():
-	pass
-
-func DontBuy():
-	pass
-
-
-func Buy():
-	get_parent().get_script()
-	
-	
-func _on_DontBuy_pressed():
-	DontBuy()
-	
-	
-func _on_Buy_pressed():
-	Buy()
-"
+[ext_resource path="res://Game_Scene.gd" type="Script" id=7]
 
 [node name="Game_Scene" type="Node"]
-script = ExtResource( 4 )
+script = ExtResource( 7 )
 
 [node name="GUI" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Buying" type="HBoxContainer" parent="GUI"]
-anchor_top = 0.257
-anchor_bottom = 0.257
-margin_left = 425.0
-margin_top = 163.8
-margin_right = 633.0
-margin_bottom = 240.8
-script = SubResource( 1 )
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -117,5 +82,4 @@ position = Vector2( 267, 213 )
 texture = ExtResource( 5 )
 script = ExtResource( 6 )
 
-[connection signal="pressed" from="Buy" to="GUI/Buying" method="_on_Buy_pressed"]
-[connection signal="pressed" from="DontBuy" to="GUI/Buying" method="_on_DontBuy_pressed"]
+[connection signal="pressed" from="Buy" to="GUI" method="_on_Buy_pressed"]
