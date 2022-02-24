@@ -13,10 +13,9 @@ func DontBuy():
 func _on_DontBuy_pressed():
 	DontBuy()
 	
-var item = "hello world"
 
 func _on_Buy_pressed():
-	item = "hi"
+	pass
 	
 
 

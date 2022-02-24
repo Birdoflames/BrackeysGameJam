@@ -1,6 +1,5 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://name Label.gd" type="Script" id=1]
 [ext_resource path="res://Dictonary.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Inventory.gd" type="Script" id=3]
 [ext_resource path="res://buying.gd" type="Script" id=4]
@@ -15,6 +14,15 @@ script = ExtResource( 7 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dictionary button" type="Button" parent="GUI"]
+margin_top = 534.0
+margin_right = 106.0
+margin_bottom = 598.0
+text = "dictionary"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -37,12 +45,11 @@ position = Vector2( 261, 213 )
 [node name="name label" type="Label" parent="."]
 anchor_top = 0.098
 anchor_bottom = 0.225
-margin_left = 210.0
-margin_top = 39.2
-margin_right = 339.0
-margin_bottom = 6.0
-text = "hello"
-script = ExtResource( 1 )
+margin_left = 367.0
+margin_top = 53.2
+margin_right = 496.0
+margin_bottom = 20.0
+text = "item name"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -73,18 +80,19 @@ __meta__ = {
 
 [node name="Bow" type="Sprite" parent="."]
 visible = false
-position = Vector2( 267, 213 )
+position = Vector2( 270, 160 )
 texture = ExtResource( 5 )
 script = ExtResource( 6 )
 
 [node name="item story" type="Label" parent="."]
-margin_left = 217.0
-margin_top = 177.0
-margin_right = 540.0
-margin_bottom = 271.0
+margin_left = 368.0
+margin_top = 168.0
+margin_right = 691.0
+margin_bottom = 262.0
 text = "this is the item story"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[connection signal="pressed" from="GUI/dictionary button" to="GUI/Artifacts_book" method="_on_dictionary_button_pressed"]
 [connection signal="pressed" from="Buy" to="GUI" method="_on_Buy_pressed"]
