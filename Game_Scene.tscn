@@ -77,14 +77,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Node" type="Node" parent="."]
-
-[node name="Bow" type="Sprite" parent="Node"]
+[node name="Bow" type="Sprite" parent="."]
 visible = false
 position = Vector2( 270, 160 )
 texture = ExtResource( 5 )
 script = ExtResource( 6 )
 
-[node name="Artifacts_book" parent="Node" instance=ExtResource( 2 )]
+[node name="Artifacts_book" parent="." instance=ExtResource( 2 )]
+visible = false
 
-[connection signal="pressed" from="dictionary button" to="Node/Artifacts_book" method="_on_dictionary_button_pressed"]
+[connection signal="pressed" from="dictionary button" to="Artifacts_book" method="_on_dictionary_button_pressed"]
