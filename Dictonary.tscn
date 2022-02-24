@@ -1,12 +1,110 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Dictonary.gd" type="Script" id=1]
+[ext_resource path="res://Bow.png" type="Texture" id=2]
+[ext_resource path="res://Bow.gd" type="Script" id=3]
+[ext_resource path="res://assets/Objects/Sword.png" type="Texture" id=4]
+[ext_resource path="res://assets/Objects/Gene Lamp.png" type="Texture" id=5]
+[ext_resource path="res://assets/Objects/Mona Lisa.png" type="Texture" id=6]
+[ext_resource path="res://assets/Objects/Necklace.png" type="Texture" id=7]
+[ext_resource path="res://assets/Objects/Cup.png" type="Texture" id=8]
+[ext_resource path="res://assets/Objects/Painting.png" type="Texture" id=9]
+[ext_resource path="res://assets/Objects/Axe.png" type="Texture" id=10]
+[ext_resource path="res://assets/Objects/Lamp.png" type="Texture" id=11]
+[ext_resource path="res://assets/Objects/Chandelier.png" type="Texture" id=12]
+[ext_resource path="res://assets/Objects/Candlestick.png" type="Texture" id=13]
+[ext_resource path="res://assets/Objects/Ring.png" type="Texture" id=14]
+[ext_resource path="res://assets/Objects/Vase.png" type="Texture" id=15]
+[ext_resource path="res://ancient sword.gd" type="Script" id=16]
+[ext_resource path="res://gene's oil lamp.gd" type="Script" id=17]
 
 [node name="Artifacts_book" type="Node2D"]
 scale = Vector2( 0.848288, 1 )
 script = ExtResource( 1 )
 
+[node name="ancient bow" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+
+[node name="ancient sword" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 4 )
+script = ExtResource( 16 )
+
+[node name="gene\'s oil lamp" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 5 )
+script = ExtResource( 17 )
+
+[node name="mona lisa\'s picture" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 6 )
+
+[node name="diamond ring" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 14 )
+
+[node name="diamond necklace" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 7 )
+
+[node name="cup" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 8 )
+
+[node name="axe" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 10 )
+
+[node name="vase" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 15 )
+
+[node name="lamp" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 11 )
+
+[node name="candlestick" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 13 )
+
+[node name="painting" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 9 )
+
+[node name="chandelier" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 12 )
+
 [node name="page 1" type="Node2D" parent="."]
+visible = false
 
 [node name="page 2 button" type="Button" parent="page 1"]
 margin_left = 1110.0
@@ -25,7 +123,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="page 1"]
+[node name="ancient sword label" type="Label" parent="page 1"]
 margin_top = 180.0
 margin_right = 300.0
 margin_bottom = 320.0
@@ -33,7 +131,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label3" type="Label" parent="page 1"]
+[node name="gene\'s oil lamp label" type="Label" parent="page 1"]
 margin_top = 360.0
 margin_right = 300.0
 margin_bottom = 500.0

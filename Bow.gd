@@ -1,17 +1,23 @@
 extends Sprite
 
-var years_ago = "15"
-	
+var random = RandomNumberGenerator.new()
+var something = random.randomize()
+var years_ago = rnd(1, 130)
+
+func rnd(start, end):
+	return random.randi_range(start, end)
+
 func story():
-	years_ago = "15"
-	var story = "we died " + years_ago + " year ago"
-	
+	years_ago = rnd(1, 130)
+	var story = "we died " + str(years_ago) + " year ago"
+
 	return story
+
 	
 func _ready():
 	story()
 	
 func dictionary_story():
-	var dictionary_story = "they died " + years_ago + " years_ago"
+	var dictionary_story = "they died " + str(years_ago) + " years_ago"
 	
-	get_parent().get_node("Artifacts_book/page 1/ancient bow label").text = dictionary_story
+	get_parent().get_node("page 1/ancient bow label").text = dictionary_story
