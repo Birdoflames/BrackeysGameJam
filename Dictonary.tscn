@@ -1,22 +1,21 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Dictonary.gd" type="Script" id=1]
+[ext_resource path="res://page 2.gd" type="Script" id=2]
 
 [node name="Artifacts_book" type="Node2D"]
+scale = Vector2( 0.848288, 1 )
 script = ExtResource( 1 )
 
 [node name="ancient bow Label" type="Label" parent="."]
-visible = false
 margin_left = 1.0
 margin_top = 6.0
 margin_right = 389.0
 margin_bottom = 154.0
-text = "this is supposed to be the story in the dictionary"
+text = "hi"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Timer" type="Timer" parent="ancient bow Label"]
 
 [node name="Button" type="Button" parent="."]
 margin_left = 928.0
@@ -29,6 +28,7 @@ __meta__ = {
 }
 
 [node name="page 2" type="Node2D" parent="."]
+script = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="page 2"]
 margin_right = 40.0
@@ -44,4 +44,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="timeout" from="ancient bow Label/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="Button" to="page 2" method="_on_Button_pressed"]

@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Dictonary.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Inventory.gd" type="Script" id=3]
-[ext_resource path="res://buying.gd" type="Script" id=4]
 [ext_resource path="res://Bow.png" type="Texture" id=5]
 [ext_resource path="res://Bow.gd" type="Script" id=6]
 [ext_resource path="res://Game_Scene.gd" type="Script" id=7]
@@ -10,15 +9,7 @@
 [node name="Game_Scene" type="Node"]
 script = ExtResource( 7 )
 
-[node name="GUI" type="Control" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="dictionary button" type="Button" parent="GUI"]
+[node name="dictionary button" type="Button" parent="."]
 margin_top = 534.0
 margin_right = 106.0
 margin_bottom = 598.0
@@ -27,9 +18,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Artifacts_book" parent="GUI" instance=ExtResource( 2 )]
-
-[node name="Inventory" type="Control" parent="GUI"]
+[node name="Inventory" type="Control" parent="."]
 margin_left = 261.0
 margin_top = 213.0
 margin_right = 301.0
@@ -78,12 +67,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Bow" type="Sprite" parent="."]
-visible = false
-position = Vector2( 270, 160 )
-texture = ExtResource( 5 )
-script = ExtResource( 6 )
-
 [node name="item story" type="Label" parent="."]
 margin_left = 368.0
 margin_top = 168.0
@@ -94,5 +77,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="GUI/dictionary button" to="GUI/Artifacts_book" method="_on_dictionary_button_pressed"]
-[connection signal="pressed" from="Buy" to="GUI" method="_on_Buy_pressed"]
+[node name="Node" type="Node" parent="."]
+
+[node name="Bow" type="Sprite" parent="Node"]
+visible = false
+position = Vector2( 270, 160 )
+texture = ExtResource( 5 )
+script = ExtResource( 6 )
+
+[node name="Artifacts_book" parent="Node" instance=ExtResource( 2 )]
+
+[connection signal="pressed" from="dictionary button" to="Node/Artifacts_book" method="_on_dictionary_button_pressed"]

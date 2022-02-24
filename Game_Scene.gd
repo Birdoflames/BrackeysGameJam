@@ -12,9 +12,9 @@ func story_decider():
 	rnd.randomize()
 	var chosen_one = sprites[rnd.randi_range(0, 12)]
 
-	var get_story = get_node("Bow").story()
+	var get_story = get_node("Node/Bow").story()
 
-	get_node("Bow").show()
+	get_node("Node/Bow").show()
 
 	get_node("name label").text = chosen_one
 
@@ -22,7 +22,7 @@ func story_decider():
 	if chosen_story == 0:
 		item_story = get_story
 	else:
-		item_story = get_node("Bow").story()
+		item_story = get_node("Node/Bow").story()
 		get_node("item story").text = item_story
 
 
