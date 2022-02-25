@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Dictonary.gd" type="Script" id=1]
 [ext_resource path="res://Bow.png" type="Texture" id=2]
@@ -18,6 +18,11 @@
 [ext_resource path="res://ancient sword.gd" type="Script" id=16]
 [ext_resource path="res://gene's oil lamp.gd" type="Script" id=17]
 [ext_resource path="res://mona lisa's picture.gd" type="Script" id=18]
+[ext_resource path="res://diamond necklace.gd" type="Script" id=19]
+[ext_resource path="res://cup.gd" type="Script" id=20]
+[ext_resource path="res://axe.gd" type="Script" id=21]
+[ext_resource path="res://vase.gd" type="Script" id=22]
+[ext_resource path="res://lamp.gd" type="Script" id=23]
 
 [node name="Artifacts_book" type="Node2D"]
 scale = Vector2( 0.848288, 1 )
@@ -62,30 +67,35 @@ visible = false
 position = Vector2( 375.212, 160 )
 scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 7 )
+script = ExtResource( 19 )
 
 [node name="cup" type="Sprite" parent="."]
 visible = false
 position = Vector2( 375.212, 160 )
 scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 8 )
+script = ExtResource( 20 )
 
 [node name="axe" type="Sprite" parent="."]
 visible = false
 position = Vector2( 375.212, 160 )
 scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 10 )
+script = ExtResource( 21 )
 
 [node name="vase" type="Sprite" parent="."]
 visible = false
 position = Vector2( 375.212, 160 )
 scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 15 )
+script = ExtResource( 22 )
 
 [node name="lamp" type="Sprite" parent="."]
 visible = false
 position = Vector2( 375.212, 160 )
 scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 11 )
+script = ExtResource( 23 )
 
 [node name="candlestick" type="Sprite" parent="."]
 visible = false
@@ -106,7 +116,6 @@ scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 12 )
 
 [node name="page 1" type="Node2D" parent="."]
-visible = false
 
 [node name="page 2 button" type="Button" parent="page 1"]
 margin_left = 1110.0
@@ -141,28 +150,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label4" type="Label" parent="page 1"]
+[node name="mona lisa\'s picture label" type="Label" parent="page 1"]
 margin_left = 905.894
 margin_right = 1205.89
 margin_bottom = 140.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label5" type="Label" parent="page 1"]
-margin_left = 905.894
-margin_top = 180.0
-margin_right = 1205.89
-margin_bottom = 320.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label6" type="Label" parent="page 1"]
-margin_left = 905.894
-margin_top = 360.0
-margin_right = 1205.89
-margin_bottom = 500.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -170,54 +161,21 @@ __meta__ = {
 [node name="page 2" type="Node2D" parent="."]
 visible = false
 
-[node name="Label4" type="Label" parent="page 2"]
-margin_right = 300.0
-margin_bottom = 140.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="diamond necklace label" type="Label" parent="page 2"]
+margin_right = 40.0
+margin_bottom = 14.0
 
-[node name="Label5" type="Label" parent="page 2"]
-margin_top = 180.0
-margin_right = 300.0
-margin_bottom = 320.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="cup label" type="Label" parent="page 2"]
+margin_right = 40.0
+margin_bottom = 14.0
 
-[node name="Label6" type="Label" parent="page 2"]
-margin_top = 360.0
-margin_right = 300.0
-margin_bottom = 500.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="vase label" type="Label" parent="page 2"]
+margin_right = 40.0
+margin_bottom = 14.0
 
-[node name="Label7" type="Label" parent="page 2"]
-margin_left = 905.894
-margin_right = 1205.89
-margin_bottom = 140.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label8" type="Label" parent="page 2"]
-margin_left = 905.894
-margin_top = 180.0
-margin_right = 1205.89
-margin_bottom = 320.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label9" type="Label" parent="page 2"]
-margin_left = 905.894
-margin_top = 360.0
-margin_right = 1205.89
-margin_bottom = 500.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="axe label" type="Label" parent="page 2"]
+margin_right = 40.0
+margin_bottom = 14.0
 
 [node name="page 3 button" type="Button" parent="page 2"]
 margin_left = 1110.0
@@ -251,6 +209,10 @@ text = "<-- previous page"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="lamp label" type="Label" parent="page 3"]
+margin_right = 40.0
+margin_bottom = 14.0
 
 [connection signal="pressed" from="page 1/page 2 button" to="." method="_on_page_2_button_pressed"]
 [connection signal="pressed" from="page 2/page 3 button" to="." method="_on_page_3_button_pressed"]

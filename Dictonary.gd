@@ -28,8 +28,6 @@ func dict_func():
 #func _on_Timer_timeout():
 
 
-
-
 func _on_page_1_button_pressed():
 	get_parent().get_node("Artifacts_book/page 1").show()
 	get_parent().get_node("Artifacts_book/page 2").hide()
