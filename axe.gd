@@ -1,13 +1,13 @@
 extends Sprite
 
 var random = RandomNumberGenerator.new()
-var something = random.randomize()
 
 var killed = rnd(40,80)
 var years_ago = 50*rnd(1,5)
 
 
 func rnd(start, end):
+	random.randomize()
 	return random.randi_range(start, end)
 
 

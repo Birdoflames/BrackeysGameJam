@@ -1,15 +1,15 @@
 extends Sprite
 
 var random = RandomNumberGenerator.new()
-var something = random.randomize()
 
-var chosen_name = rnd(0,2)
+var chosen_name = rnd(0,3)
 var royalty_name = ""
 var queen_or_king = ""
 var years = rnd(5,15)
 var seller_name = ""
 
 func rnd(start, end):
+	random.randomize()
 	return random.randi_range(start, end)
 
 	

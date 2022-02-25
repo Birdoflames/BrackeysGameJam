@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Dictonary.gd" type="Script" id=1]
 [ext_resource path="res://Bow.png" type="Texture" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://axe.gd" type="Script" id=21]
 [ext_resource path="res://vase.gd" type="Script" id=22]
 [ext_resource path="res://lamp.gd" type="Script" id=23]
+[ext_resource path="res://candlestick.gd" type="Script" id=24]
 
 [node name="Artifacts_book" type="Node2D"]
 scale = Vector2( 0.848288, 1 )
@@ -102,6 +103,7 @@ visible = false
 position = Vector2( 375.212, 160 )
 scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 13 )
+script = ExtResource( 24 )
 
 [node name="painting" type="Sprite" parent="."]
 visible = false
@@ -116,6 +118,7 @@ scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 12 )
 
 [node name="page 1" type="Node2D" parent="."]
+visible = false
 
 [node name="page 2 button" type="Button" parent="page 1"]
 margin_left = 1110.0
@@ -211,6 +214,14 @@ __meta__ = {
 }
 
 [node name="lamp label" type="Label" parent="page 3"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="candlestick label" type="Label" parent="page 3"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="painting label" type="Label" parent="page 3"]
 margin_right = 40.0
 margin_bottom = 14.0
 

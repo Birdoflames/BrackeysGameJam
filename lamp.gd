@@ -6,7 +6,7 @@ var random = RandomNumberGenerator.new()
 var royalty_name = ""
 var room = ""
 var source = ""
-var chosen_name = rnd(0,2)
+var chosen_name = rnd(0,3)
 var chosen_source = rnd(0,1)
 var chosen_room = rnd(0,1) 
 
@@ -31,8 +31,9 @@ func story():
 	else:
 		royalty_name = "Queen Anne "
 		
-	if chosen_room == 1:
+	if chosen_room == 0:
 		room = "living room"
+	else:
 		room = "bedroom"
 		
 	if chosen_source == 0:

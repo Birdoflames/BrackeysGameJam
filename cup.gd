@@ -1,14 +1,14 @@
 extends Sprite
 
 var random = RandomNumberGenerator.new()
-var something = random.randomize()
 
 var years_ago = rnd(10,20)
 var royalty_name = ""
 var sellers_name = ""
-var chosen_name = rnd(0,2)
+var chosen_name = rnd(0,3)
 
 func rnd(start, end):
+	random.randomize()
 	return random.randi_range(start, end)
 
 
