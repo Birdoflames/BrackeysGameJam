@@ -3,7 +3,7 @@ extends Sprite
 var random = RandomNumberGenerator.new()
 var something = random.randomize()
 
-var chosen_name = rnd(0,5)
+var chosen_name = rnd(0,2)
 
 var miracles_count = rnd(10,24)
 var lit_for = rnd(5,15)
@@ -23,11 +23,7 @@ func story():
 	elif chosen_name == 2:
 		 genies_name = "Aladin"
 		
-	elif chosen_name == 3:
-		 genies_name = ""
-		
-	elif chosen_name == 4:
-		 genies_name = ""
+
 
 	else:
 		 genies_name = "Jerry Smith"
