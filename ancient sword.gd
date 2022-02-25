@@ -41,16 +41,16 @@ func _ready():
 	
 func dictionary_story():
 	if chosen_name == 0:
-		 sellers_name = "Sam Li"
+		 sellers_name = "Dhedrig Li"
 		
 	elif chosen_name == 1:
-		 sellers_name = "Sara Astley"
+		 sellers_name = "Frendille Astley"
 		
 	elif chosen_name == 2:
-		 sellers_name = "John RockStar"
+		 sellers_name = "Tilpoth RockStar"
 		
 	elif chosen_name == 3:
-		 sellers_name = "Morty Young"
+		 sellers_name = "Cudro Young"
 		
 	elif chosen_name == 4:
 		 sellers_name = "Coby Bond"

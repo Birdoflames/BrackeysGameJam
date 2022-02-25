@@ -20,21 +20,21 @@ func story():
 	if chosen_name == 0:
 		royalty_name = "King Pierce"
 		queen_or_king = "him"
-		seller_name = "Sam Li"
+		seller_name = "Dhedrig Li"
 		
 	elif chosen_name == 1:
 		royalty_name = "King Andres"
 		queen_or_king = "him"
-		seller_name = "Sara Astley"
+		seller_name = "Frendille Astley"
 		
 	elif chosen_name == 2:
 		royalty_name = "Queen Juno"
 		queen_or_king = "her"
-		seller_name = "John RockStar"
+		seller_name = "Tilpoth RockStar"
 	else:
 		royalty_name = "Queen Anne"
 		queen_or_king = "her"
-		seller_name = "Morty Young"
+		seller_name = "Cudro Young"
 		
 		
 	var story = "this necklace was "+royalty_name+" necklace! I served "+queen_or_king+" for "+str(years)+" years."
@@ -42,6 +42,6 @@ func story():
 	return story
 	
 func dictionary_story():
-	var dictionary_story = "this necklace was "+royalty_name+" necklace! "+seller_name+ "served "+queen_or_king+" for "+years+" years."
+	var dictionary_story = "this necklace was "+royalty_name+" necklace! "+seller_name+ "served "+queen_or_king+" for "+str(years)+" years."
 	
 	get_parent().get_node("page 2/diamond necklace label").text = dictionary_story

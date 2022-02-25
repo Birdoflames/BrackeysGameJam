@@ -12,16 +12,16 @@ func rnd(start, end):
 
 func story():
 	if chosen_name == 0:
-		 archers_name = "Sam Li"
+		 archers_name = "Dhedrig Li"
 		
 	elif chosen_name == 1:
-		 archers_name = "Sara Astley"
+		 archers_name = "Frendille Astley"
 		
 	elif chosen_name == 2:
-		 archers_name = "John RockStar"
+		 archers_name = "Tilpoth RockStar"
 		
 	elif chosen_name == 3:
-		 archers_name = "Morty Young"
+		 archers_name = "Cudro Young"
 		
 	elif chosen_name == 4:
 		 archers_name = "Coby Bond"
