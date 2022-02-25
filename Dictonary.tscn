@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Dictonary.gd" type="Script" id=1]
 [ext_resource path="res://Bow.png" type="Texture" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://lamp.gd" type="Script" id=23]
 [ext_resource path="res://candlestick.gd" type="Script" id=24]
 [ext_resource path="res://diamond ring.gd" type="Script" id=25]
+[ext_resource path="res://painting.gd" type="Script" id=26]
 
 [node name="Artifacts_book" type="Node2D"]
 scale = Vector2( 0.848288, 1 )
@@ -112,6 +113,7 @@ visible = false
 position = Vector2( 375.212, 160 )
 scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 9 )
+script = ExtResource( 26 )
 
 [node name="chandelier" type="Sprite" parent="."]
 visible = false
@@ -230,6 +232,15 @@ margin_bottom = 14.0
 [node name="painting label" type="Label" parent="page 3"]
 margin_right = 40.0
 margin_bottom = 14.0
+
+[node name="timer left label" type="Label" parent="."]
+margin_left = 99.0
+margin_top = 562.0
+margin_right = 170.0
+margin_bottom = 602.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="page 1/page 2 button" to="." method="_on_page_2_button_pressed"]
 [connection signal="pressed" from="page 2/page 3 button" to="." method="_on_page_3_button_pressed"]

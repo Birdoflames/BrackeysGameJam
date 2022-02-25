@@ -20,7 +20,7 @@ func _ready():
 
 func story():
 	if chosen_name == 0:
-		royalty_name = "King Pierce"
+		royalty_name = "King Pierce "
 		
 	elif chosen_name == 1:
 		royalty_name = "King Andres "

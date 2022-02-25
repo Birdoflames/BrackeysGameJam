@@ -26,8 +26,7 @@ func story():
 	else:
 		place = "castle"
 		 
-		
-		
+	
 	if choose_mafia == 0:
 		mafia_name = "Draegan Grimsbane"
 		
