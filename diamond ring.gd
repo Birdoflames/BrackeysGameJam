@@ -52,7 +52,7 @@ func story():
 		 sellers_name = "David Smith"
 		
 
-	var story = "This ring was given to me by "+ royalty_name +"before "+ str(years) + " years ago."
+	var story = "This ring was given to me by "+ royalty_name +" "+ str(years) + " years ago."
 
 	return story
 func dictionary_story():

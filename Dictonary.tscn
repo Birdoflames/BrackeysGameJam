@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=27 format=2]
+=======
+[gd_scene load_steps=28 format=2]
+>>>>>>> b908e7a70026fd7a114ff592a7ed3559cd8f8cef
 
 [ext_resource path="res://Dictonary.gd" type="Script" id=1]
 [ext_resource path="res://Bow.png" type="Texture" id=2]
@@ -26,6 +30,10 @@
 [ext_resource path="res://candlestick.gd" type="Script" id=24]
 [ext_resource path="res://diamond ring.gd" type="Script" id=25]
 [ext_resource path="res://painting.gd" type="Script" id=26]
+<<<<<<< HEAD
+=======
+[ext_resource path="res://chandelier.gd" type="Script" id=27]
+>>>>>>> b908e7a70026fd7a114ff592a7ed3559cd8f8cef
 
 [node name="Artifacts_book" type="Node2D"]
 scale = Vector2( 0.848288, 1 )
@@ -120,6 +128,7 @@ visible = false
 position = Vector2( 375.212, 160 )
 scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 12 )
+script = ExtResource( 27 )
 
 [node name="page 1" type="Node2D" parent="."]
 visible = false
@@ -233,6 +242,7 @@ margin_bottom = 14.0
 margin_right = 40.0
 margin_bottom = 14.0
 
+<<<<<<< HEAD
 [node name="timer left label" type="Label" parent="."]
 margin_left = 99.0
 margin_top = 562.0
@@ -241,6 +251,11 @@ margin_bottom = 602.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+=======
+[node name="chandalier label" type="Label" parent="page 3"]
+margin_right = 40.0
+margin_bottom = 14.0
+>>>>>>> b908e7a70026fd7a114ff592a7ed3559cd8f8cef
 
 [connection signal="pressed" from="page 1/page 2 button" to="." method="_on_page_2_button_pressed"]
 [connection signal="pressed" from="page 2/page 3 button" to="." method="_on_page_3_button_pressed"]

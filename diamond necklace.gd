@@ -37,7 +37,7 @@ func story():
 		seller_name = "Cudro Young"
 		
 		
-	var story = "this necklace was "+royalty_name+" necklace! I served "+queen_or_king+" for "+str(years)+" years."
+	var story = "this necklace was "+royalty_name+" necklace!\n I served "+queen_or_king+" for "+str(years)+" years."
 
 	return story
 	

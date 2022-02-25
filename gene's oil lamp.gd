@@ -28,7 +28,7 @@ func story():
 	else:
 		 genies_name = "Jerry Smith"
 		
-	var story = "tales tell this lamp was the great Genie’s lamp, the villagers around call him "+ genies_name+", he is responsible for "+str(miracles_count)+" miracles! e.g. that the candlestick was lit for "+ str(lit_for) +" whole days without any fuel."
+	var story = "tales tell this lamp was the great Genie’s lamp,\n the villagers around call him "+ genies_name+", he is responsible for "+str(miracles_count)+" miracles! e.g. that the candlestick was lit for "+ str(lit_for) +" whole days without any fuel."
 
 	return story
 
@@ -37,6 +37,6 @@ func _ready():
 	story()
 	
 func dictionary_story():
-	var dictionary_story = 'as the local legend tells us, this lamp was the great genie’s lamp! which the villagers use to call "'+ genies_name +'", he is responsible for '+str(miracles_count) +' miracles! e.g. that the candlestick was lit for ' +str(lit_for)+ ' whole days without any fuel.'
+	var dictionary_story = 'as the local legend tells us, this lamp was the great genie’s lamp,\n which the villagers use to call "'+ genies_name +'", \nhe is responsible for '+str(miracles_count) +' miracles! e.g. that the candlestick was lit for ' +str(lit_for)+ ' whole days without any fuel.'
 	
 	get_parent().get_node("page 1/gene's oil lamp label").text = dictionary_story

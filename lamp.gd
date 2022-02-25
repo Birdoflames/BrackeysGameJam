@@ -42,7 +42,7 @@ func story():
 		source = "electricity"
 
 
-	var story = "this lamp was "+royalty_name +room+" lamp! it was the first lamp that worked on "+source
+	var story = "this lamp was "+royalty_name +room+" lamp!\n it was the first lamp that worked on "+source
 	return story
 
 func dictionary_story():

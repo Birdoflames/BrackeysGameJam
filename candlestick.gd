@@ -42,7 +42,7 @@ func story():
 		mafia_name = "Prism Vonner"
 		
 	
-	var story = "This candlestick was found in a raid of one of the leaders of the mafia's house! he was known as " + mafia_name +" and was hung in the court in front of the whole " + place
+	var story = "This candlestick was found in a raid of one of the leaders\n of the mafia's house! he was known as " + mafia_name +" and was hung in the court in front of the whole " + place
 	return story
 
 func dictionary_story():

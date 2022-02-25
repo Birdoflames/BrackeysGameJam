@@ -14,7 +14,7 @@ func _ready():
 	story()
 
 func story():
-	var story = "this axe killed over "+str(killed)+" people in the great war that occurred "+str(years_ago)+" years ago!"
+	var story = "this axe killed over "+str(killed)+" people in the great war\n that occurred "+str(years_ago)+" years ago!"
 	return story
 
 func dictionary_story():
