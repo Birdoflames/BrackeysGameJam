@@ -16,7 +16,7 @@ func dict_func():
 		get_parent().get_node("Artifacts_book/page 1").show()
 		first_time = false
 		
-	var sprites = ["ancient sword", "ancient bow", "genie's oil lamp", "Mona Lisa's picture", "diamond ring", "diamond necklace", "cup", "axe", "vase", "lamp", "candlestick", "painting", "chandelier"]
+	var sprites = ["ancient sword", "ancient bow", "genie's oil lamp", "mona lisa's picture", "diamond ring", "diamond necklace", "cup", "axe", "vase", "lamp", "candlestick", "painting", "chandelier"]
 	
 	for sprite in sprites:
 		get_node(sprite).dictionary_story()

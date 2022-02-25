@@ -12,7 +12,7 @@ func story_decider():
 	rnd.randomize()
 	var chosen_one = sprites[rnd.randi_range(0, 12)]
 
-	var get_story = get_node("Artifacts_book/"+chosen_one ).story()
+	var get_story = get_node("Artifacts_book/"+chosen_one).story()
 
 	get_node("Artifacts_book/"+chosen_one).show()
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Dictonary.gd" type="Script" id=1]
 [ext_resource path="res://Bow.png" type="Texture" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://assets/Objects/Vase.png" type="Texture" id=15]
 [ext_resource path="res://ancient sword.gd" type="Script" id=16]
 [ext_resource path="res://gene's oil lamp.gd" type="Script" id=17]
+[ext_resource path="res://mona lisa's picture.gd" type="Script" id=18]
 
 [node name="Artifacts_book" type="Node2D"]
 scale = Vector2( 0.848288, 1 )
@@ -36,7 +37,7 @@ scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 4 )
 script = ExtResource( 16 )
 
-[node name="gene\'s oil lamp" type="Sprite" parent="."]
+[node name="genie\'s oil lamp" type="Sprite" parent="."]
 visible = false
 position = Vector2( 375.212, 160 )
 scale = Vector2( 1.38968, 1 )
@@ -48,6 +49,7 @@ visible = false
 position = Vector2( 375.212, 160 )
 scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 6 )
+script = ExtResource( 18 )
 
 [node name="diamond ring" type="Sprite" parent="."]
 visible = false
