@@ -20,7 +20,7 @@ func story():
 	else:
 		liquid = "wine"	
 		
-	var story = "this is the vase that was used to transfer "+liquid+" to the warriors in the great war that occurred "+str(years_ago)+" years ago" 
+	var story = "this is the vase that was used to transfer "+liquid+" \nto the warriors in the great war that occurred "+str(years_ago)+" years ago" 
 	return story
 
 func dictionary_story():

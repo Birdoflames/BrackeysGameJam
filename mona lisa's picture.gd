@@ -19,6 +19,6 @@ func story():
 	return story
 	
 func dictionary_story():
-	var dictionary_story = "this is the original Mona Lisa’s picture, "+str(fights_count)+" fights has started because of it and over "+str(died_for)+" people died while trying to get it!"
+	var dictionary_story = "this is the original Mona Lisa’s picture,\n "+str(fights_count)+" fights has started because of it and over "+str(died_for)+" people died while trying to get it!"
 	
 	get_parent().get_node("page 1/mona lisa's picture label").text = dictionary_story

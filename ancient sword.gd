@@ -31,7 +31,7 @@ func story():
 	else:
 		 great_grandfathers_name = "Jerry Smith"
 		
-	var story = "I got it from my great grandfather, " +great_grandfathers_name +", he got it while fighting in the great war that occurred "+ str(years_ago) +" years ago"
+	var story = "I got it from my great grandfather, " +great_grandfathers_name +" ,\n he got it while fighting in the great war that occurred "+ str(years_ago) +" years ago"
 
 	return story
 

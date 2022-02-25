@@ -29,7 +29,7 @@ func story():
 	else:
 		 archers_name = "David Smith"
 
-	var story = "this bow was the best archer’s bow in the whole castle! "+archers_name+", he killed over "+str(killed)+" people!"
+	var story = "This bow was the best archer’s bow in the whole castle!\n "+archers_name+", he killed over "+str(killed)+" people!"
 
 	return story
 
@@ -38,6 +38,6 @@ func _ready():
 	story()
 	
 func dictionary_story():
-	var dictionary_story = "this bow was the best archer’s bow in the whole castle! "+archers_name+", he killed over "+str(killed)+" people"
+	var dictionary_story = "This bow was the best archer’s bow in the whole castle! "+archers_name+", he killed over "+str(killed)+" people"
 	
 	get_parent().get_node("page 1/ancient bow label").text = dictionary_story
