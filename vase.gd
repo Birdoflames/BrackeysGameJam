@@ -15,6 +15,9 @@ func _ready():
 	story()
 
 func story():
+	chosen_liquid = rnd(0,1)
+	years_ago = 50*rnd(1, 5)
+
 	if chosen_liquid == 0:
 		liquid = "water" 
 	else:

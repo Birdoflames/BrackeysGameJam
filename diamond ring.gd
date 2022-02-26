@@ -19,7 +19,10 @@ func _ready():
 	story()
 
 func story():
-
+	chosen_name = rnd(0,3)
+	chosen_seller = rnd(0,5)
+	years = rnd(35,75)
+	
 	if chosen_name == 0:
 		 royalty_name = "King Pierce "
 
@@ -58,4 +61,4 @@ func story():
 func dictionary_story():
 	var dictionary_story = 'This ring was given to '+sellers_name+' by '+ royalty_name + str(years) + ' years ago.'
 
-	get_parent().get_node("page 2/diamond ring label").text = dictionary_story
+	get_parent().get_node("page 5/diamond ring label").text = dictionary_story

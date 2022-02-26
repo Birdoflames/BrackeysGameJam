@@ -17,6 +17,9 @@ func _ready():
 	story()
 
 func story():
+	choose_mafia = rnd(0,3)
+	choose_place = rnd(0,3)
+
 	if choose_place == 0:
 		place = "village"
 	elif choose_place == 1:

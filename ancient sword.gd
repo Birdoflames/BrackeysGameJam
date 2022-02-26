@@ -1,7 +1,6 @@
 extends Sprite
 
-var random = RandomNumberGenerator.new()
-var something = random.randomize()
+
 
 var chosen_name = rnd(0,5)
 var great_grandfathers_name = ""
@@ -9,10 +8,15 @@ var sellers_name = ""
 var years_ago = 50*rnd(1,5)
 
 func rnd(start, end):
+	var random = RandomNumberGenerator.new()
+	random.randomize()
 	return random.randi_range(start, end)
 
 
 func story():
+	years_ago = 50*rnd(1,5)
+	chosen_name = rnd(0,5)
+	
 	if chosen_name == 0:
 		 great_grandfathers_name = "Stan Li"
 		

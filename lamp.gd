@@ -19,6 +19,10 @@ func _ready():
 	story()
 
 func story():
+	chosen_name = rnd(0,3)
+	chosen_source = rnd(0,1)
+	chosen_room = rnd(0,1) 
+
 	if chosen_name == 0:
 		royalty_name = "King Pierce "
 		

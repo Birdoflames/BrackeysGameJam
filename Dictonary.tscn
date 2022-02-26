@@ -1,8 +1,8 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Dictonary.gd" type="Script" id=1]
 [ext_resource path="res://Bow.png" type="Texture" id=2]
-[ext_resource path="res://Bow.gd" type="Script" id=3]
+[ext_resource path="res://ancient bow.gd" type="Script" id=3]
 [ext_resource path="res://assets/Objects/Sword.png" type="Texture" id=4]
 [ext_resource path="res://assets/Objects/Gene Lamp.png" type="Texture" id=5]
 [ext_resource path="res://assets/Objects/Mona Lisa.png" type="Texture" id=6]
@@ -26,10 +26,18 @@
 [ext_resource path="res://candlestick.gd" type="Script" id=24]
 [ext_resource path="res://diamond ring.gd" type="Script" id=25]
 [ext_resource path="res://painting.gd" type="Script" id=26]
+[ext_resource path="res://chandelier.gd" type="Script" id=27]
+[ext_resource path="res://mug.gd" type="Script" id=28]
+[ext_resource path="res://spellbook.gd" type="Script" id=29]
+[ext_resource path="res://wizards hat.gd" type="Script" id=30]
+[ext_resource path="res://potion.gd" type="Script" id=31]
+[ext_resource path="res://trophy.gd" type="Script" id=32]
 
 [node name="Artifacts_book" type="Node2D"]
 scale = Vector2( 0.848288, 1 )
 script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
 
 [node name="ancient bow" type="Sprite" parent="."]
 visible = false
@@ -120,9 +128,44 @@ visible = false
 position = Vector2( 375.212, 160 )
 scale = Vector2( 1.38968, 1 )
 texture = ExtResource( 12 )
+script = ExtResource( 27 )
+
+[node name="mug" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 12 )
+script = ExtResource( 28 )
+
+[node name="spellbook" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 12 )
+script = ExtResource( 29 )
+
+[node name="wizards hat" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 12 )
+script = ExtResource( 30 )
+
+[node name="potion" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 12 )
+script = ExtResource( 31 )
+
+[node name="trophy" type="Sprite" parent="."]
+visible = false
+position = Vector2( 375.212, 160 )
+scale = Vector2( 1.38968, 1 )
+texture = ExtResource( 12 )
+script = ExtResource( 32 )
 
 [node name="page 1" type="Node2D" parent="."]
-visible = false
 
 [node name="page 2 button" type="Button" parent="page 1"]
 margin_left = 1110.0
@@ -135,32 +178,35 @@ __meta__ = {
 }
 
 [node name="ancient bow label" type="Label" parent="page 1"]
-margin_right = 297.0
-margin_bottom = 140.0
+margin_top = 60.0
+margin_right = 300.0
+margin_bottom = 200.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ancient sword label" type="Label" parent="page 1"]
-margin_top = 180.0
+margin_top = 300.0
 margin_right = 300.0
-margin_bottom = 320.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="gene\'s oil lamp label" type="Label" parent="page 1"]
-margin_top = 360.0
-margin_right = 300.0
-margin_bottom = 500.0
+margin_bottom = 450.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="mona lisa\'s picture label" type="Label" parent="page 1"]
-margin_left = 905.894
-margin_right = 1205.89
-margin_bottom = 140.0
+margin_left = 906.0
+margin_top = 60.0
+margin_right = 1206.0
+margin_bottom = 200.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gene\'s oil lamp label" type="Label" parent="page 1"]
+margin_left = 906.532
+margin_top = 300.0
+margin_right = 1206.53
+margin_bottom = 450.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -169,20 +215,29 @@ __meta__ = {
 visible = false
 
 [node name="diamond necklace label" type="Label" parent="page 2"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_top = 60.0
+margin_right = 300.0
+margin_bottom = 200.0
 
 [node name="cup label" type="Label" parent="page 2"]
-margin_right = 40.0
-margin_bottom = 14.0
-
-[node name="vase label" type="Label" parent="page 2"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_top = 300.0
+margin_right = 300.0
+margin_bottom = 450.0
 
 [node name="axe label" type="Label" parent="page 2"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 906.0
+margin_top = 60.0
+margin_right = 1206.0
+margin_bottom = 200.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vase label" type="Label" parent="page 2"]
+margin_left = 906.0
+margin_top = 300.0
+margin_right = 1206.0
+margin_bottom = 450.0
 
 [node name="page 3 button" type="Button" parent="page 2"]
 margin_left = 1110.0
@@ -204,34 +259,108 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="diamond ring label" type="Label" parent="page 2"]
-margin_right = 40.0
-margin_bottom = 14.0
-
 [node name="page 3" type="Node2D" parent="."]
 visible = false
+
+[node name="lamp label" type="Label" parent="page 3"]
+margin_top = 60.0
+margin_right = 300.0
+margin_bottom = 200.0
+
+[node name="candlestick label" type="Label" parent="page 3"]
+margin_top = 300.0
+margin_right = 300.0
+margin_bottom = 450.0
+
+[node name="chandalier label" type="Label" parent="page 3"]
+margin_left = 906.0
+margin_top = 60.0
+margin_right = 1206.0
+margin_bottom = 200.0
+
+[node name="painting label" type="Label" parent="page 3"]
+margin_left = 906.0
+margin_top = 300.0
+margin_right = 1206.0
+margin_bottom = 450.0
 
 [node name="page 2 button" type="Button" parent="page 3"]
 margin_left = 1.17883
 margin_top = 559.0
-margin_right = 97.1788
+margin_right = 124.179
 margin_bottom = 599.0
 text = "<-- previous page"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="lamp label" type="Label" parent="page 3"]
-margin_right = 40.0
-margin_bottom = 14.0
+[node name="page 4" type="Node2D" parent="."]
+visible = false
 
-[node name="candlestick label" type="Label" parent="page 3"]
-margin_right = 40.0
-margin_bottom = 14.0
+[node name="mug label" type="Label" parent="page 4"]
+margin_top = 60.0
+margin_right = 300.0
+margin_bottom = 200.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="painting label" type="Label" parent="page 3"]
-margin_right = 40.0
-margin_bottom = 14.0
+[node name="spellbook label" type="Label" parent="page 4"]
+margin_top = 300.0
+margin_right = 300.0
+margin_bottom = 450.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="potion label" type="Label" parent="page 4"]
+margin_left = 906.0
+margin_top = 60.0
+margin_right = 1206.0
+margin_bottom = 200.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="wizard\'s hat label" type="Label" parent="page 4"]
+margin_left = 906.0
+margin_top = 300.0
+margin_right = 1206.0
+margin_bottom = 450.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page 5" type="Node2D" parent="."]
+visible = false
+
+[node name="diamond ring label" type="Label" parent="page 5"]
+margin_top = 60.0
+margin_right = 300.0
+margin_bottom = 200.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="trophy label" type="Label" parent="page 5"]
+margin_top = 300.0
+margin_right = 300.0
+margin_bottom = 450.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buy" type="Button" parent="."]
+visible = false
+margin_left = 580.511
+margin_top = 318.0
+margin_right = 682.511
+margin_bottom = 395.0
+size_flags_horizontal = 3
+text = "Buy"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="timer left label" type="Label" parent="."]
 margin_left = 99.0
@@ -242,7 +371,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="DontBuy" type="Button" parent="."]
+visible = false
+margin_left = 684.25
+margin_top = 318.0
+margin_right = 786.25
+margin_bottom = 395.0
+size_flags_horizontal = 3
+text = "Don't Buy"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="pressed" from="page 1/page 2 button" to="." method="_on_page_2_button_pressed"]
 [connection signal="pressed" from="page 2/page 3 button" to="." method="_on_page_3_button_pressed"]
 [connection signal="pressed" from="page 2/page 1 button" to="." method="_on_page_1_button_pressed"]
 [connection signal="pressed" from="page 3/page 2 button" to="." method="_on_page_2_button_pressed"]
+[connection signal="pressed" from="buy" to="." method="_on_buy_pressed"]

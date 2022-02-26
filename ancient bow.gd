@@ -1,16 +1,18 @@
 extends Sprite
 
-var random = RandomNumberGenerator.new()
-
 var killed = 10*rnd(4,12)
 var archers_name = ""
 var chosen_name = rnd(0,5)
 
 func rnd(start, end):
+	var random = RandomNumberGenerator.new()
 	random.randomize()
 	return random.randi_range(start, end)
 
 func story():
+	killed = 10*rnd(4,12)
+	chosen_name = rnd(0,5)
+
 	if chosen_name == 0:
 		 archers_name = "Dhedrig Li"
 		

@@ -14,6 +14,9 @@ func _ready():
 	story()
 
 func story():
+	killed = rnd(40,80)
+	years_ago = 50*rnd(1,5)
+	
 	var story = "this axe killed over "+str(killed)+" people in the great war that occurred "+str(years_ago)+" years ago!"
 	return story
 

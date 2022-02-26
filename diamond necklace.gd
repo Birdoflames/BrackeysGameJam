@@ -17,6 +17,9 @@ func _ready():
 	story()
 	
 func story():
+	years = rnd(5,15)
+	chosen_name = rnd(0,3)
+	
 	if chosen_name == 0:
 		royalty_name = "King Pierce"
 		queen_or_king = "him"

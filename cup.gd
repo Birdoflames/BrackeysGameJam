@@ -16,6 +16,9 @@ func _ready():
 	story()
 
 func story():
+	chosen_name = rnd(0,3)
+	years_ago = rnd(10,20)
+	
 	if chosen_name == 0:
 		royalty_name = "King Pierce"
 		sellers_name = "Sam Li"

@@ -14,6 +14,9 @@ func _ready():
 	story()
 
 func story():
+	not_sure = rnd(0,3)
+	years = rnd(1, 5)*50
+
 	if not_sure == 0:
 		artist_name = "Floyd Evans"
 
@@ -30,6 +33,6 @@ func story():
 	return story
 
 func dictionary_story():
-	var dictionary_story = "This painting is an original piece by " + artist_name + "and is his \n depiction of the great war that happened " + str(years) + " years ago"
+	var dictionary_story = "This painting is an original piece by " + artist_name + "and is his \n depiction of the great war that occurred " + str(years) + " years ago"
 
 	get_parent().get_node("page 3/painting label").text = dictionary_story

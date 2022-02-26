@@ -40,32 +40,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Buy" type="Button" parent="."]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 425.0
-margin_top = 318.0
-margin_right = -497.0
-margin_bottom = -205.0
-size_flags_horizontal = 3
-text = "Buy"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="DontBuy" type="Button" parent="."]
-visible = false
-margin_left = 531.0
-margin_top = 318.0
-margin_right = 633.0
-margin_bottom = 395.0
-size_flags_horizontal = 3
-text = "Don't Buy"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="item story" type="Label" parent="."]
 margin_left = 406.0
 margin_top = 168.0
@@ -74,8 +48,6 @@ margin_bottom = 262.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Timer" type="Timer" parent="."]
 
 [node name="Artifacts_book" parent="." instance=ExtResource( 2 )]
 
@@ -89,4 +61,3 @@ __meta__ = {
 }
 
 [connection signal="pressed" from="dictionary button" to="Artifacts_book" method="_on_dictionary_button_pressed"]
-[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

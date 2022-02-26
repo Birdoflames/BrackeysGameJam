@@ -3,7 +3,7 @@ extends Sprite
 var random = RandomNumberGenerator.new()
 var something = random.randomize()
 
-var chosen_name = rnd(0,2)
+var chosen_name = rnd(0,3)
 
 var miracles_count = rnd(10,24)
 var lit_for = rnd(5,15)
@@ -14,6 +14,11 @@ func rnd(start, end):
 	return random.randi_range(start, end)
 
 func story():
+	chosen_name = rnd(0,3)
+
+	miracles_count = rnd(10,24)
+	lit_for = rnd(5,15)
+
 	if chosen_name == 0:
 		 genies_name = "Angle"
 		
@@ -23,12 +28,10 @@ func story():
 	elif chosen_name == 2:
 		 genies_name = "Aladin"
 		
-
-
 	else:
 		 genies_name = "Jerry Smith"
 		
-	var story = "tales tell this lamp was the great Genie’s lamp, the villagers around call him "+ genies_name+", he is responsible for "+str(miracles_count)+" miracles! e.g. that the candlestick was lit for "+ str(lit_for) +" whole days without any fuel."
+	var story = "tales tell this lamp was the great Genie’s lamp, the villagers around call him "+ genies_name+".\n he is responsible for "+str(miracles_count)+" miracles! e.g. that the candlestick was lit for "+ str(lit_for) +" whole days without any fuel."
 
 	return story
 
